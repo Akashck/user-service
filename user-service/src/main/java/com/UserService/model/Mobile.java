@@ -3,6 +3,16 @@ package com.UserService.model;
 import java.util.List;
 
 public class Mobile {
+    @Override
+    public String toString() {
+        return "Mobile{" +
+                "RAM=" + RAM +
+                ", ROM=" + ROM +
+                ", mobileName=" + mobileName +
+                ", MobileBrand=" + MobileBrand +
+                '}';
+    }
+
     public List<String> getRAM() {
         return RAM;
     }
