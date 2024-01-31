@@ -29,4 +29,34 @@ public class UsersImpl implements com.UserService.service.Users {
         }
     }
 
+    public static List<UserModel> setManuallyUsers() {
+        List<UserModel> model = new ArrayList<>();
+        UsersImpl users = new UsersImpl();
+      //  users.userData(model);
+        return model;
+    }
+
+    private List<UserModel> userData(List<UserModel> models) {
+        UserModel data = new UserModel();
+        data.setUserId(101);
+        data.setUserName("user101");
+        data.setAddress("HYD");
+
+        UserModel data2= new UserModel();
+        data2.setUserId(102);
+        data2.setUserName("user102");
+        data2.setAddress("BLR");
+
+        UserModel data3 = new UserModel();
+        data3.setUserId(103);
+        data3.setUserName("user103");
+        data3.setAddress("CHN");
+
+        models.add(data);
+        models.add(data2);
+        models.add(data3);
+
+        return models;
+    }
+
 }
