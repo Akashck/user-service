@@ -3,7 +3,6 @@ package com.UserService.service.impl;
 import com.UserService.Repository.UserRepository;
 import com.UserService.model.UserModel;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -15,7 +14,6 @@ import org.powermock.modules.junit4.PowerMockRunner;
 import org.powermock.reflect.Whitebox;
 import org.springframework.boot.test.mock.mockito.MockBean;
 
-import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,7 +26,7 @@ class UsersImplTest {
     @InjectMocks
     private UsersImpl usersImpl;
 
-   // @MockBean
+    @MockBean
     private UserRepository userRepository;
 
    // @Before

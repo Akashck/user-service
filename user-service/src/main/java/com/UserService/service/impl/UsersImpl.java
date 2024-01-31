@@ -32,7 +32,7 @@ public class UsersImpl implements com.UserService.service.Users {
     public static List<UserModel> setManuallyUsers() {
         List<UserModel> model = new ArrayList<>();
         UsersImpl users = new UsersImpl();
-      //  users.userData(model);
+        users.userData(model);
         return model;
     }
 
