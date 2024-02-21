@@ -23,6 +23,7 @@ public class UserController {
     @PostMapping("/createUSer")
     public ResponseEntity<String> createUSer(@RequestBody List<UserModel> user) {
         users.updateUser(user);
+        System.out.println("******");
         return new ResponseEntity<>("user is Created", HttpStatus.CREATED);
     }
 
